@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] float engageDistance;
     public GameObject[] Enemies;
     public bool inCombat = false;
-    public GameObject closestEnemy;
+    private GameObject closestEnemy;
 
     // Other Stuff
     private Vector3 _currentVelocity = Vector3.zero;
@@ -96,7 +96,7 @@ public class CameraController : MonoBehaviour
     {
         if (Vector3.Distance(player.transform.position, enemy.transform.position) < engageDistance) // Check if the closest enemy is within combat range
         {
-            Debug.Log(Vector3.Distance(player.transform.position, enemy.transform.position)); // Output distance in the debug log
+           // Debug.Log(Vector3.Distance(player.transform.position, enemy.transform.position)); // Output distance in the debug log
             inCombat = true; // Combat status is true
 
             if (offset.z <= combatOffset.z) // Set the cam offset to the combat offset once the z value is reached or passed
