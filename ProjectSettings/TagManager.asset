@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Left Combat Zone
+  - Right Combat Zone
+  - Center Combat Zone
   layers:
   - Default
   - TransparentFX
