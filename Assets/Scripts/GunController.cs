@@ -21,7 +21,7 @@ public class GunController : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetMouseButtonDown(0)) { // Shoot on left click
+        if(Input.GetKeyDown(KeyCode.Space)) { // Shoot on left click
             Rigidbody shot = Instantiate(bullet, new Vector3(barrelPos.transform.position.x, barrelPos.transform.position.y, barrelPos.transform.position.z), Quaternion.identity); // Create bullet object
             shot.velocity = transform.right * bulletVelocity; // Launch bullet from barrel at certain speed
             Debug.Log(shot.velocity);

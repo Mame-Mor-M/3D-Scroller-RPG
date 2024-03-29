@@ -8,6 +8,7 @@ TagManager:
   - Left Combat Zone
   - Right Combat Zone
   - Center Combat Zone
+  - Ship
   layers:
   - Default
   - TransparentFX

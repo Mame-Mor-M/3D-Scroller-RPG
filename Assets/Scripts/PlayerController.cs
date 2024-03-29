@@ -29,7 +29,9 @@ public class PlayerController : MonoBehaviour
     //Other
     private Rigidbody rb;
     public CombatZoneController combat;
+    public Animator anim;
     
+
     
     // Start is called before the first frame update
     void Start()
@@ -45,8 +47,18 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = new Vector3(horizontal * walkSpeed,0 , vertical * walkSpeed); // Allows user input to move the player
         
+        if(horizontal != 0 || vertical != 0)
+        {
+            anim.SetBool("isMoving", true);
+        }
+
+        else
+        {
+            anim.SetBool("isMoving", false);
+        }
         if(horizontal < 0)
         {
+           
             facingUp = false;
             facingDown = false;
             if (cam.inCombat == true)
@@ -129,7 +141,7 @@ public class PlayerController : MonoBehaviour
 
 
         turnPlayer();
-        Debug.Log(transform.eulerAngles.y);
+        //Debug.Log(transform.eulerAngles.y);
     }
 
     void turnPlayer()
