@@ -32,7 +32,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2806142582827008857}
+  - {fileID: 3773802982750272648}
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 40, y: 40}
+  m_CellSize: {x: 70, y: 70}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -115,7 +115,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4afa3059ca6c1b746889890754432402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &4462907895191403420
+  image: {fileID: 843735092174488013}
+  selected: {r: 0.2830189, g: 0.2787469, b: 0.2787469, a: 1}
+  notSelected: {r: 0.4509804, g: 0.4392157, b: 0.4392157, a: 1}
+--- !u!1001 &3405065512936834125
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -216,8 +219,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eab0e78ccf8460e438d76d6c60947a36, type: 3}
---- !u!224 &2806142582827008857 stripped
+--- !u!224 &3773802982750272648 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1954004624565024965, guid: eab0e78ccf8460e438d76d6c60947a36, type: 3}
-  m_PrefabInstance: {fileID: 4462907895191403420}
+  m_PrefabInstance: {fileID: 3405065512936834125}
   m_PrefabAsset: {fileID: 0}

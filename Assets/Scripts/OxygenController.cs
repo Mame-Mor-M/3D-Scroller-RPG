@@ -14,7 +14,7 @@ public class OxygenController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Oxygen: " + totalOxygen);
+        //Debug.Log("Oxygen: " + totalOxygen);
 
         if (onShip)
         {
